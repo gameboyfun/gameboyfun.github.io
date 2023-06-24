@@ -1,9 +1,10 @@
 <template>
   <div class="landing-page flex flex-col items-center justify-center min-h-screen text-center font-sans">
     <div class="video-container">
-      <video autoplay loop muted playsinline class="w-full h-full object-cover">
+      <!-- <video autoplay loop muted playsinline class="w-full h-full object-cover">
         <source src="/bg.mp4" type="video/mp4">
-      </video>
+      </video> -->
+      <img src="/bg.jpeg" alt="">
     </div>
 
     <div class="content-container">
@@ -135,7 +136,7 @@ export default {
   overflow: hidden;
 }
 
-.video-container video {
+.video-container img {
   position: absolute;
   top: 50%;
   left: 50%;
