@@ -1,5 +1,5 @@
 <template>
-    <div class="full-page-particles">
+    <div class="text-white">
         resume
     </div>
 </template>

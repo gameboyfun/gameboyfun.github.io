@@ -17,6 +17,6 @@
       :click-effect="true"
       click-mode="push"
     />
-    <nuxt class="absolute" style="position: absolute" />
+    <nuxt class="absolute" />
   </div>
 </template>

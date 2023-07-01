@@ -1,6 +1,12 @@
 <template>
-  <div>
-    <div class="text-sky-400">qweqweqwe</div>
+  <div
+    class="flex justify-center items-center absolute h-screen left-1/2 translate-x-[-50%]"
+  >
+    <div class="text-center">
+      <h1 class="text-sky-400 text-6xl">qweqweqwe</h1>
+      <br />
+      <div>1231231</div>
+    </div>
   </div>
 </template>
 
@@ -9,31 +15,6 @@ export default {
   data() {
     return {
       fullName: 'Your Full Name',
-      jobTitle: 'Your Job Title',
-      aboutMe: 'Write a brief description about yourself here.',
-      experiences: [
-        {
-          position: 'Job Position',
-          company: 'Company Name',
-          startDate: 'Start Date',
-          endDate: 'End Date',
-          responsibilities: [
-            'Responsibility 1',
-            'Responsibility 2',
-            'Responsibility 3',
-          ],
-        },
-      ],
-      educationList: [
-        {
-          degree: 'Degree',
-          institution: 'Institution Name',
-          startDate: 'Start Date',
-          endDate: 'End Date',
-        },
-      ],
-      email: 'yourname@example.com',
-      phone: '123-456-7890',
     }
   },
 }
