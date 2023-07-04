@@ -1,7 +1,7 @@
 <template>
-  <div class="mybg" style="height: 100vh; width: 100wh">
-    <div class="h-100 d-flex align-items-center">
-      <b-row class="w-100">
+  <div class="mybg h-screen w-screen">
+    <div class="h-screen flex items-center">
+      <b-row class="w-screen">
         <b-col cols="12" class="text-center">
           <h1 class="mytext">{{ error.statusCode }}</h1>
           <h1 class="mytext2">
@@ -15,13 +15,17 @@
               }`
             }}
           </h1>
-          <b-button
-            variant="link"
-            class="mytext3 text-decoration-none"
-            to="/"
-          >
-            Go to Homepage
-          </b-button>
+          <div>
+            <nuxt-link to="/">
+              <b-button
+                variant="link"
+                class="mytext3 text-decoration-none"
+                to="/"
+              >
+                Go to Homepage
+              </b-button>
+            </nuxt-link>
+          </div>
         </b-col>
       </b-row>
     </div>

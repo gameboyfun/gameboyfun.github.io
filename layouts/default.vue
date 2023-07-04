@@ -1,9 +1,9 @@
 <template>
-  <div class="full-page-particles">
+  <div>
     <vue-particles
       color="#fff"
       :particle-opacity="0.7"
-      :particles-number="80"
+      :particles-number="100"
       shape-type="star"
       :particle-size="4"
       lines-color="#fff"
@@ -11,12 +11,12 @@
       :line-linked="true"
       :line-opacity="0.4"
       :lines-distance="150"
-      :move-speed="3"
+      :move-speed="5"
       :hover-effect="true"
       hover-mode="grab"
       :click-effect="true"
       click-mode="push"
     />
-    <nuxt class="absolute" />
+    <nuxt />
   </div>
 </template>
