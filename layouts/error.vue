@@ -42,7 +42,6 @@ export default {
 
 <style scoped>
 .mytext {
-  margin-top: 150px;
   font-size: 100px;
   text-transform: uppercase;
   color: #12000a;
