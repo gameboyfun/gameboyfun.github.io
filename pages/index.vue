@@ -17,21 +17,18 @@
       </vue-typed-js>
       <br />
       <nuxt-link to="/resume">
-        <button>
-          Resume
-          <span></span><span></span><span></span><span></span>
+        <button id="btn" class="ui-btn">
+          <span>Resume</span>
         </button>
       </nuxt-link>
       <nuxt-link to="/social">
-        <button>
-          Social Media
-          <span></span><span></span><span></span><span></span>
+        <button id="btn" class="ui-btn">
+          <span>Social Media</span>
         </button>
       </nuxt-link>
       <nuxt-link to="/experience">
-        <button>
-          Experience
-          <span></span><span></span><span></span><span></span>
+        <button id="btn" class="ui-btn">
+          <span>Experience</span>
         </button>
       </nuxt-link>
     </div>
@@ -56,59 +53,184 @@ export default {
 }
 
 button {
-  --c: white;
-  color: var(--c);
-  font-size: 16px;
-  border: 0.3em solid var(--c);
-  border-radius: 0.5em;
-  width: 12em;
-  height: 3em;
+  padding: 10px 20px;
   text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-align: center;
-  line-height: 2em;
-  position: relative;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: gray;
+  border: 1px solid gray;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  box-shadow: 0 0 5px gray, 0 0 20px gray, 0 0 50px gray,
+    0 0 100px gray;
+}
+
+.ui-btn {
+  --btn-default-bg: rgb(41, 41, 41);
+  --btn-padding: 15px 20px;
+  --btn-hover-bg: rgb(51, 51, 51);
+  --btn-transition: 0.3s;
+  --btn-letter-spacing: 0.1rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0.137);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #fff;
+  --default-btn-color: #fff;
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 600;
+  --font-family: Menlo, Roboto Mono, monospace;
+  /* 👆 this field should not be empty */
+}
+
+/* button settings 👆 */
+
+.ui-btn {
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  /* background: var(--btn-default-bg); */
+  border: 1px solid #ffffff80;
+  cursor: pointer;
+  transition: var(--btn-transition);
   overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-  margin: 1em;
+  box-shadow: var(--btn-shadow);
 }
 
-button span {
+.ui-btn span {
+  letter-spacing: var(--btn-letter-spacing);
+  transition: var(--btn-transition);
+  box-sizing: border-box;
+  position: relative;
+  background: inherit;
+}
+
+.ui-btn span::before {
+  box-sizing: border-box;
   position: absolute;
-  width: 25%;
-  height: 100%;
-  background-color: var(--c);
-  transform: translateY(150%);
-  border-radius: 50%;
-  left: calc((var(--n) - 1) * 25%);
-  transition: 0.5s;
-  transition-delay: calc((var(--n) - 1) * 0.1s);
-  z-index: -1;
+  content: '';
+  background: inherit;
 }
 
-button:hover {
-  color: black;
+.ui-btn:hover,
+.ui-btn:focus {
+  background: var(--btn-hover-bg);
 }
 
-button:hover span {
-  transform: translateY(0) scale(2);
+.ui-btn:hover span,
+.ui-btn:focus span {
+  color: var(--hover-btn-color);
 }
 
-button span:nth-child(1) {
-  --n: 1;
+.ui-btn:hover span::before,
+.ui-btn:focus span::before {
+  animation: chitchat linear both var(--btn-animation-duration);
 }
 
-button span:nth-child(2) {
-  --n: 2;
-}
+@keyframes chitchat {
+  0% {
+    content: '#';
+  }
 
-button span:nth-child(3) {
-  --n: 3;
-}
+  5% {
+    content: '.';
+  }
 
-button span:nth-child(4) {
-  --n: 4;
+  10% {
+    content: '^{';
+  }
+
+  15% {
+    content: '-!';
+  }
+
+  20% {
+    content: '#$_';
+  }
+
+  25% {
+    content: '№:0';
+  }
+
+  30% {
+    content: '#{+.';}35%{content: '@}-?';
+  }
+
+  40% {
+    content: '?{4@%';
+  }
+
+  45% {
+    content: '=.,^!';
+  }
+
+  50% {
+    content: '?2@%';
+  }
+
+  55% {
+    content: '\;1}]';
+  }
+
+  60% {
+    content: '?{%:%';
+    right: 0;
+  }
+
+  65% {
+    content: '|{f[4';
+    right: 0;
+  }
+
+  70% {
+    content: '{4%0%';
+    right: 0;
+  }
+
+  75% {
+    content: "'1_0<";
+    right: 0;
+  }
+
+  80% {
+    content: '{0%';
+    right: 0;
+  }
+
+  85% {
+    content: "]>'";
+    right: 0;
+  }
+
+  90% {
+    content: '4';
+    right: 0;
+  }
+
+  95% {
+    content: '2';
+    right: 0;
+  }
+
+  100% {
+    content: '';
+    right: 0;
+  }
 }
 </style>
