@@ -228,7 +228,7 @@ export default {
   border: none;
 }
 
-.light-button button.bt .button-holder {
+.light-button button.bt .button-holder#discordHolder {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,16 +237,116 @@ export default {
   width: 100px;
   background-color: #0a0a0a;
   border-radius: 5px;
-  color: #0f0f0f;
+  color: rgba(88, 101, 242, 1);
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+.light-button button.bt .button-holder#facebookHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: rgba(59, 89, 152, 1);
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+.light-button button.bt .button-holder#githubHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+.light-button button.bt .button-holder#instagramHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: rgba(222, 30, 124, 1);
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+.light-button button.bt .button-holder#linkedinHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: rgba(0, 119, 181, 1);
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+.light-button button.bt .button-holder#lineHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: rgba(37, 185, 3, 1);
   font-weight: 700;
   transition: 300ms;
   outline: #0f0f0f 2px solid;
   outline-offset: 20;
 }
 
-.light-button button.bt .button-holder svg {
+.light-button button.bt .button-holder svg#discord {
   height: 50px;
-  fill: #0f0f0f;
+  fill: rgba(88, 101, 242, 1);
+  transition: 300ms;
+}
+.light-button button.bt .button-holder svg#facebook {
+  height: 50px;
+  fill: rgba(59, 89, 152, 1);
+  transition: 300ms;
+}
+.light-button button.bt .button-holder svg#github {
+  height: 50px;
+  fill: rgba(255, 255, 255, 1);
+  transition: 300ms;
+}
+.light-button button.bt .button-holder svg#instagram {
+  height: 50px;
+  fill: rgba(222, 30, 124, 1);
+  transition: 300ms;
+}
+.light-button button.bt .button-holder svg#linkedin {
+  height: 50px;
+  fill: rgba(0, 119, 181, 1);
+  transition: 300ms;
+}
+.light-button button.bt .button-holder svg#line {
+  height: 50px;
+  fill: rgba(37, 185, 3, 1);
   transition: 300ms;
 }
 
