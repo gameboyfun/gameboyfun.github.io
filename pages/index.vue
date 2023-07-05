@@ -169,7 +169,11 @@ button {
   }
 
   30% {
-    content: '#{+.';}35%{content: '@}-?';
+    content: '#{+.';
+  }
+
+  35% {
+    content: '@}-?';
   }
 
   40% {
