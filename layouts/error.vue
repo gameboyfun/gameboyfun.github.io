@@ -1,33 +1,31 @@
 <template>
   <div class="mybg h-screen w-screen">
     <div class="h-screen flex items-center">
-      <b-row class="w-screen">
-        <b-col cols="12" class="text-center">
-          <h1 class="mytext">{{ error.statusCode }}</h1>
-          <h1 class="mytext2">
-            {{
-              `${
-                error.statusCode === 404
-                  ? `Page not found`
-                  : error.statusCode === 403
-                  ? error.message
-                  : error.message
-              }`
-            }}
-          </h1>
-          <div>
-            <nuxt-link to="/">
-              <b-button
-                variant="link"
-                class="mytext3 text-decoration-none"
-                to="/"
-              >
-                Go to Homepage
-              </b-button>
-            </nuxt-link>
-          </div>
-        </b-col>
-      </b-row>
+      <div class="columns-1 w-screen text-center">
+        <h1 class="mytext">{{ error.statusCode }}</h1>
+        <h1 class="mytext2">
+          {{
+            `${
+              error.statusCode === 404
+                ? `Page not found`
+                : error.statusCode === 403
+                ? error.message
+                : error.message
+            }`
+          }}
+        </h1>
+        <div>
+          <nuxt-link to="/">
+            <button
+              variant="link"
+              class="mytext3 text-decoration-none border-none"
+              to="/"
+            >
+              Go to Homepage
+            </button>
+          </nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>

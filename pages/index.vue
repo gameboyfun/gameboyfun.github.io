@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute top-1/2 left-1/2 -mr-[50%] -translate-y-1/2 -translate-x-1/2"
+    class="absolute top-1/2 left-1/2 -mr-[50%] -translate-y-1/2 -translate-x-1/2 p-4"
   >
     <div class="text-center text-white MartianMono">
       <vue-typed-js
