@@ -12,3 +12,18 @@ canvas {
 .MartianMono{
   font-family: 'Martian Mono', monospace;
 }
+
+/* transition page effect */
+.page-enter-active, .page-leave-active {
+  transition: opacity 0.6s ease, filter 0.6s ease;
+}
+
+.page-enter, .page-leave-to {
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.page-enter-to, .page-leave {
+  opacity: 1;
+  filter: blur(0);
+}

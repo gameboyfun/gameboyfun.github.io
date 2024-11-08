@@ -79,4 +79,9 @@ export default {
       },
     },
   },
+
+  pageTransition: {
+    name: 'page', // Custom transition name
+    mode: 'out-in', // Optional: Use 'out-in' for an out-in transition, 'in-out' for in-out
+  },
 }
