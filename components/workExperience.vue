@@ -18,12 +18,21 @@
       📌 {{ data }}
     </div>
     <h1 class="prose text-4xl text-white my-4">Projects</h1>
-    <div
-      v-for="(project, index) in projects"
-      :key="`project-${index}`"
-      class="flex mb-2"
-    >
-      📌 {{ project }}
+    <div class="flex flex-wrap">
+      <div
+        v-for="(project, index) in left"
+        :key="`project-left-${index}`"
+        class="flex mb-2 w-full md:w-1/2"
+      >
+        📌 {{ project }}
+      </div>
+      <div
+        v-for="(project, index) in right"
+        :key="`project-right-${index}`"
+        class="flex mb-2 w-full md:w-1/2"
+      >
+        📌 {{ project }}
+      </div>
     </div>
     <h1 class="prose text-4xl text-white my-4">Tools</h1>
     <div class="flex flex-wrap gap-4">
@@ -74,6 +83,17 @@ export default {
         return []
       },
     },
+  },
+  data() {
+    return {
+      left: null,
+      right: null,
+    }
+  },
+  mounted() {
+    const middle = Math.ceil(this.projects.length / 2)
+    this.left = this.projects.slice(0, middle)
+    this.right = this.projects.slice(middle)
   },
 }
 </script>
