@@ -1,0 +1,10 @@
+svg {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+svg:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.3))
+    drop-shadow(0 0 20px rgba(0, 255, 255, 0.3))
+    drop-shadow(0 0 30px rgba(0, 255, 255, 0.3)); /* Glowing effect */
+  transform: scale(1); /* Optional: to slightly enlarge the SVG on hover */
+}

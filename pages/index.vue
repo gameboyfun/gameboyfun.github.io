@@ -39,16 +39,16 @@ export default {
       ],
       buttonList: [
         {
-          linkTo: '/resume',
-          title: 'Resume',
+          linkTo: '/experience',
+          title: 'Experience',
+        },
+        {
+          linkTo: '/about-me',
+          title: 'About Me',
         },
         {
           linkTo: '/social',
           title: 'Social Media',
-        },
-        {
-          linkTo: '/experience',
-          title: 'Experience',
         },
       ],
     }
