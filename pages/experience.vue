@@ -90,10 +90,49 @@ export default {
       resumeUrl: '/resume.pdf',
       workExperience: [
         {
+          companyImg: '/tcs-logo.png',
+          company: 'Tata Consultancy Services (Thailand) Ltd.',
+          start: 'Jan 2025',
+          end: 'Present',
+          responsibility: [
+            `Specialized in the investment module within Agile methodology,
+          implementing thorough unit testing to achieve an 80% code coverage
+          goal for all components during the iterative development phase at TTB
+          Bank Project ONE App.`,
+            `Developed a web application leveraging React.js and Next.js,
+          incorporating a micro frontend architecture. Conducted unit tests
+          using Jest.`,
+            `Addressed and resolved production issues to maintain uninterrupted
+          system functionality.`,
+          ],
+          projects: [
+            'TTB Oneapp (Investment Squad)',
+            'Tablet Platform (Investment Squad)',
+          ],
+          tools: [
+            'react',
+            'next',
+            'javascript',
+            'typescript',
+            'jest',
+            'postman',
+            'flutter',
+            'git',
+            'html',
+            'css',
+            'dart',
+            'bitbucket',
+            'atlassian',
+            'jira',
+            'redux',
+            'vscode',
+          ],
+        },
+        {
           companyImg: '/the-prodigy-logo.jpg',
           company: 'The Prodigy (Thailand) Public Company Limited',
           start: 'Jan 2024',
-          end: 'Present',
+          end: 'Dec 2024',
           responsibility: [
             `Specialized in the investment module within Agile methodology,
           implementing thorough unit testing to achieve an 80% code coverage
